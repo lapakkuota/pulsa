@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isi Ulang Pulsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="widget">
+        <h2>Isi Ulang Pulsa</h2>
+        <form id="pulsaForm">
+            <label for="phone">Nomor Telepon:</label>
+            <input type="text" id="phone" name="phone" placeholder="Masukkan nomor telepon (contoh: 08123456789)" required>
+
+            
+            <label for="nominal">Nominal Pulsa:</label>
+            <select id="nominal" name="nominal" required>
+                <option value="ist5">10.000</option>
+                <option value="xld">20.000</option>
+                <option value="pulsa50">50.000</option>
+                <option value="pulsa100">100.000</option>
+            </select>
+            
+            <button type="submit">Isi Pulsa</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
